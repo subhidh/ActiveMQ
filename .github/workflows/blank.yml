@@ -41,6 +41,6 @@ jobs:
           cd from_github,
           echo ${{ github.workspace }},
           echo $GITHUB_WORKSPACE.
-          $GITHUB_WORKSPACE/make create_broker.
+          make create_broker.
         # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
           
