@@ -46,6 +46,7 @@ jobs:
           mkdir -p from_github,
           cd from_github,
           echo $working-dir
+          echo $broker_name
           echo ${{ github.workspace }},
           ls -lrt
         # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
