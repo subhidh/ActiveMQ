@@ -5,9 +5,9 @@ create_broker:
 	--user admin \
 	--password admin \
 	--allow-anonymous False \
-	$(broker_)
+	$(broker_name)
 
 start_broker:
 	@echo "\nstart"
-	@echo $(broker_path)/$(broker_)/artemis
+	@echo $(broker_path)/$(broker_name)/artemis
 
