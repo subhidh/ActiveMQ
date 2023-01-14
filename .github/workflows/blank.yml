@@ -34,4 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project,
-          mkdir /Desktop/from_github
+          cd /Users/subhidh/Desktop/,
+          mkdir from_github,
+          artemis create --user admin --password admin --allow-anonymous Y broker_from_github
+          
