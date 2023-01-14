@@ -21,7 +21,7 @@ jobs:
     runs-on: self-hosted
     
     env:
-      broker_path: /Users/subhidh/Desktop/
+      broker_path: /Users/subhidh/Desktop/from_github/
       broker_name: broker1
       
     # Steps represent a sequence of tasks that will be executed as part of the job
