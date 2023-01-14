@@ -5,7 +5,7 @@ create_broker:
 	--user admin \
 	--password admin \
 	--allow-anonymous False \
-	$(broker_name)
+	$(broker_path)/$(broker_name)
 
 start_broker:
 	@echo "\nstart"
