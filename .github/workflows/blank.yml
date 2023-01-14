@@ -37,5 +37,6 @@ jobs:
           echo test, and deploy your project,
           mkdir -p from_github,
           cd from_github,
-          artemis create --user admin --password admin --allow-anonymous Y broker_from_github
+          make create_broker.
+        # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
           
