@@ -43,6 +43,7 @@ jobs:
           cd from_github,
           echo ${{ github.workspace }},
           echo $GITHUB_WORKSPACE.
+          echo $working-directory
           ls -lrt
         # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
           
