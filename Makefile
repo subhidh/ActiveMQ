@@ -9,5 +9,5 @@ create_broker:
 
 start_broker:
 	@echo "\nstart"
-	@echo date
+	@echo $(foo)
 
