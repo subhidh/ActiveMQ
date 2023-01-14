@@ -21,7 +21,7 @@ jobs:
     runs-on: self-hosted
     
     env:
-      working-dir: /Users/subhidh/Desktop/
+      broker_path: /Users/subhidh/Desktop/
       broker_name: broker1
       
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -45,9 +45,7 @@ jobs:
           echo test, and deploy your project,
           mkdir -p from_github,
           cd from_github,
-          echo $working-dir
-          echo $broker_name
-          echo ${{ github.workspace }},
+          echo $broker_path
           ls -lrt
           make -C ${{ github.workspace }} start_broker foo=$broker_name
         # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
