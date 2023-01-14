@@ -5,9 +5,9 @@ create_broker:
 	--user admin \
 	--password admin \
 	--allow-anonymous False \
-	broker_name_github
+	$(broker_)
 
 start_broker:
 	@echo "\nstart"
-	@echo $(foo)
+	@echo $(broker_path)/$(broker_)/artemis
 
