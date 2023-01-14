@@ -39,12 +39,13 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        working-directory: $working-dir
+        working-directory: /Users/subhidh/Desktop/
         run: |
           echo Add other actions to build,
           echo test, and deploy your project,
           mkdir -p from_github,
           cd from_github,
+          echo $working-dir
           echo ${{ github.workspace }},
           ls -lrt
         # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
