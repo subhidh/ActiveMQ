@@ -8,6 +8,20 @@ create_broker:
 	$(broker_path)/$(broker_name)
 
 start_broker:
-	@echo "\nstart"
-	@echo $(broker_path)/$(broker_name)/artemis
+	@$(broker_path)/bin/artemis-service start
+
+end_broker:
+	@$(broker_path)/bin/artemis-service stop
+
+restart_broker:
+	@$(broker_path)/bin/artemis-service restart
+
+deploy_broker:
+	@echo "deploy"
+
+start_all:
+	@echo "start_all"
+
+stop_all:
+	@echo "stop_all"
 
