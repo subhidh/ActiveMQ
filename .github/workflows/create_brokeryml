@@ -31,6 +31,4 @@ jobs:
         run: |
           echo Create Broker,
           ls -lrt
-          make -C ${{ github.workspace }} create_broker foo=$broker_name
-        # artemis create --user admin --password admin --allow-anonymous Y broker_from_github
-          
+          make -C ${{ github.workspace }} create_broker broker_path=$broker_path broker_name=$broker_name          
