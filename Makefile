@@ -1,4 +1,4 @@
-ARTEMIS_VERSION := /Users/subhidh/Documents/apache-artemis-2.26.0/bin/artemis
+ARTEMIS_VERSION := /Users/subhidh/Documents/apache-artemis-2.27.1/bin/artemis
 create_broker:
 	@${ARTEMIS_VERSION} create \
 	--user admin \
